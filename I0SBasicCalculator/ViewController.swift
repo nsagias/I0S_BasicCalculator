@@ -9,13 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
     @IBOutlet weak var firstNumberText: UITextField!
-    
-    
     @IBOutlet weak var secondNumberText: UITextField!
-    
-    
     @IBOutlet weak var resultLabel: UILabel!
     
     
@@ -24,24 +19,45 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
     @IBAction func sumButtonClicked(_ sender: Any) {
-        let firstNumber = Int(firstNumberText.text!)!
-        let secondNumber = Int(secondNumberText.text!)!
         
-        let result = firstNumber + secondNumber
-        
-        resultLabel.text = String(result)
+        if let firstNumber = Int(firstNumberText.text!) {
+            if let secondNumber = Int(secondNumberText.text!) {
+                let result = firstNumber + secondNumber
+                resultLabel.text = String(result)
+            }
+        }
     }
     
     
     @IBAction func minusButtonClicked(_ sender: Any) {
+        
+        if let firstNumber = Int(firstNumberText.text!) {
+            if let secondNumber = Int(secondNumberText.text!) {
+                let result = firstNumber - secondNumber
+                resultLabel.text = String(result)
+            }
+        }
     }
     
     @IBAction func mulltiplyButtonClicked(_ sender: Any) {
+        
+        if let firstNumber = Int(firstNumberText.text!) {
+            if let secondNumber = Int(secondNumberText.text!) {
+                let result = firstNumber * secondNumber
+                resultLabel.text = String(result)
+            }
+        }
     }
     
     @IBAction func divideButtonClicked(_ sender: Any) {
+        
+        if let firstNumber = Int(firstNumberText.text!) {
+            if let secondNumber = Int(secondNumberText.text!) {
+                let result = firstNumber / secondNumber
+                resultLabel.text = String(result)
+            }
+        }
     }
     
     
