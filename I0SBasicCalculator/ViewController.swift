@@ -22,7 +22,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func sumButtonClicked(_ sender: Any) {
+    // Addition Button
+    @IBAction func sumButtonClicked(_ sender: Any) -> Void {
         
         if let firstNumber = Int(firstNumberText.text!) {
             if let secondNumber = Int(secondNumberText.text!) {
@@ -32,7 +33,8 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func minusButtonClicked(_ sender: Any) {
+    // Subtraction Button
+    @IBAction func minusButtonClicked(_ sender: Any) -> Void {
         
         if let firstNumber = Int(firstNumberText.text!) {
             if let secondNumber = Int(secondNumberText.text!) {
@@ -42,7 +44,8 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func mulltiplyButtonClicked(_ sender: Any) {
+    // Multiplication Button
+    @IBAction func mulltiplyButtonClicked(_ sender: Any) -> Void {
         
         if let firstNumber = Int(firstNumberText.text!) {
             if let secondNumber = Int(secondNumberText.text!) {
@@ -52,7 +55,8 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func divideButtonClicked(_ sender: Any) {
+    // Division Button
+    @IBAction func divideButtonClicked(_ sender: Any) -> Void {
         
         if let firstNumber = Int(firstNumberText.text!) {
             if let secondNumber = Int(secondNumberText.text!) {
