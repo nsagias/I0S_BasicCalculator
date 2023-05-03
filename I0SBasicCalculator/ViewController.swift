@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     
     
+    // Initialize global variable
+    var result: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -23,18 +26,17 @@ class ViewController: UIViewController {
         
         if let firstNumber = Int(firstNumberText.text!) {
             if let secondNumber = Int(secondNumberText.text!) {
-                let result = firstNumber + secondNumber
+                result = firstNumber + secondNumber
                 resultLabel.text = String(result)
             }
         }
     }
     
-    
     @IBAction func minusButtonClicked(_ sender: Any) {
         
         if let firstNumber = Int(firstNumberText.text!) {
             if let secondNumber = Int(secondNumberText.text!) {
-                let result = firstNumber - secondNumber
+                result = firstNumber - secondNumber
                 resultLabel.text = String(result)
             }
         }
@@ -44,7 +46,7 @@ class ViewController: UIViewController {
         
         if let firstNumber = Int(firstNumberText.text!) {
             if let secondNumber = Int(secondNumberText.text!) {
-                let result = firstNumber * secondNumber
+                result = firstNumber * secondNumber
                 resultLabel.text = String(result)
             }
         }
@@ -54,12 +56,11 @@ class ViewController: UIViewController {
         
         if let firstNumber = Int(firstNumberText.text!) {
             if let secondNumber = Int(secondNumberText.text!) {
-                let result = firstNumber / secondNumber
+                result = firstNumber / secondNumber
                 resultLabel.text = String(result)
             }
         }
     }
-    
     
 }
 
