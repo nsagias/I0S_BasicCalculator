@@ -26,6 +26,12 @@ class ViewController: UIViewController {
 
 
     @IBAction func sumButtonClicked(_ sender: Any) {
+        let firstNumber = Int(firstNumberText.text!)!
+        let secondNumber = Int(secondNumberText.text!)!
+        
+        let result = firstNumber + secondNumber
+        
+        resultLabel.text = String(result)
     }
     
     
